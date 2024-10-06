@@ -1,4 +1,3 @@
-#make a method that calculate powers
 def calculating_powers(base, exponent):
     # for base case
     if exponent == 0:
@@ -7,6 +6,7 @@ def calculating_powers(base, exponent):
     else:
         return base * calculating_powers(base, exponent - 1)
 
+print("Power Calculator")
 print("Hello user\n")
 
 #for inputing base number
