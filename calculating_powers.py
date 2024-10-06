@@ -6,8 +6,10 @@ def calculating_powers(base, exponent):
     else:
         return base * calculating_powers(base, exponent - 1)
     
-base = float(input("Enter a base number: "))
-exponent = float(input("Enter a exponent: "))
+base = int(input("Enter a base number: "))
+exponent = int(input("Enter a exponent: "))
 
-calculating_powers()
-#add a recursive case
+result = calculating_powers(base, exponent)
+print(f"The {base}^{exponent} is equal to {result}")
+
+calculating_powers(base, exponent)
